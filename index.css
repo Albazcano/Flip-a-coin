@@ -1,0 +1,22 @@
+.coin {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.25rem;
+      
+}
+
+.alignContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-self: center;
+      
+}
+
+body {
+    margin: 0 auto;
+    margin-top: 1.25rem;
+    width: 10%;
+    display: flex;
+    align-items: center;
+}

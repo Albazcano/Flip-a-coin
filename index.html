@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanza una moneda</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  
+  <section class= "alignContent">
+
+  <img class= "coin" src="./assets/Royal_Canadian_Mint_La_Real_Casa_de_la_Moneda_de_Canad__lanza_su.jpg" alt="coin">
+
+  <button id="flip" type="button">Lanza una moneda</button>
+    <div id="result"></div> 
+
+    <script> 
+    
+      let button = document.getElementById("flip");
+      let result = document.getElementById("result");
+
+      function fnClick(event) {
+        let num = Math.random();
+
+        if (num < 0.5) {
+          result.innerHTML = "Salió Cara";
+        } else {
+          result.innerHTML = "Salió Cruz";
+        }
+      }
+      button.addEventListener("click", fnClick);
+    </script>
+
+  </section>
+</body>
+</html>
